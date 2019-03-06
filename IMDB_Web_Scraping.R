@@ -1,6 +1,8 @@
 # Title     : IMDB Web Scraping
 # Objective : To scrap IMDb website for the 100 most popular feature films released in 2016. 
 
+# Source: https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/ 
+
 # Loading the rvest package
 # install.packages('rvest')
 library('rvest')
