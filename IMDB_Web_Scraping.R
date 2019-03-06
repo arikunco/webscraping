@@ -19,7 +19,6 @@ webpage <- read_html(url)
 # Runtime: The duration of the feature film.
 # Genre: The genre of the feature film,
 # Rating: The IMDb rating of the feature film.
-# Metascore: The metascore on IMDb website for the feature film.
 # Votes: Votes cast in favor of the feature film.
 # Gross_Earning_in_Mil: The gross earnings of the feature film in millions.
 # Director: The main director of the feature film. Note, in case of multiple directors, I’ll take only the first.
@@ -259,7 +258,7 @@ length(gross_data)
 
 summary(gross_data)
 
-# Step 11: Now we have successfully scraped all the 11 features for the 100 most popular feature films released in 2016. Let’s combine them to create a dataframe and inspect its structure.
+# Step 11: Now we have successfully scraped all the 9 features for the 100 most popular feature films released in 2016. Let’s combine them to create a dataframe and inspect its structure.
 
 #Combining all the lists to form a data frame
 movies_df<-data.frame(Rank = rank_data, Title = title_data,
@@ -272,3 +271,4 @@ movies_df<-data.frame(Rank = rank_data, Title = title_data,
 #Structure of the data frame
 str(movies_df)
 #You have now successfully scraped the IMDb website for the 100 most popular feature films released in 2016.
+

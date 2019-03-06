@@ -18,15 +18,15 @@ library(rtweet)
 
 # Option 1 - not working 
 # token <- create_token(
-#   consumer_key = "xxxxxxG8nhoRWW2oib0N5P1sx",
-#   consumer_secret = "xxxxxIhhz30KpeRBEW9NVKHKBBOvSvZLfS8pk0bKr10fNzxC")
+#   consumer_key = "r8j6JhG8nhoRWW2oib0N5P1sx",
+#   consumer_secret = "r8QXIBWIhhz30KpeRBEW9NVKHKBBOvSvZLfS8pk0bKr10fNzxC")
 
 # With access token / secret
 token <- create_token(
-  consumer_key = "xxxxxG8nhoRWW2oib0N5P1sx",
-  consumer_secret = "xxxxxBWIhhz30KpeRBEW9NVKHKBBOvSvZLfS8pk0bKr10fNzxC",
-  access_token = "xxxxx871-j6Tmxt1k1jYSXEMkasJIM7FS0T94K2YWlnxI1wi46",
-  access_secret = "xxxxxEp29Z578DG1LPxHGfGMjZicHkpaCpx7q9WaWheQU")
+  consumer_key = "r8j6JhG8nhoRWW2oib0N5P1sx",
+  consumer_secret = "r8QXIBWIhhz30KpeRBEW9NVKHKBBOvSvZLfS8pk0bKr10fNzxC",
+  access_token = "35094871-j6Tmxt1k1jYSXEMkasJIM7FS0T94K2YWlnxI1wi46",
+  access_secret = "lji11Ep29Z578DG1LPxHGfGMjZicHkpaCpx7q9WaWheQU")
 
 # Step 3: Crawling Data Twitter 
 
@@ -43,7 +43,7 @@ my_username='arikunc0r0'
 # dan masih banyak yang lain seperti untuk menampilkan retweet, siapa yang me-retweet, mendapatkan list favorite, menampilkan trending topics, cleansing tweet, dan juga ekspor data ke file csv.
 
 # find 1000 tweets with keywords: "kota jakarta"
-tweet <- search_tweets(q = "syahrini", n = 1000)
+tweet <- search_tweets(q = "pemilu", n = 1000)
 
 # to know the column names of tweet 
 colnames(tweet)
@@ -53,8 +53,8 @@ dim(tweet)
 k <- tweet[,c("created_at", "screen_name", "text")]
 
 # Remember!
-# kata “kota” dan kata “bogor” (tidak memperhatikan urutan)
-# "\"kota bogor\""	frase “kota bogor”
+# "kota bogor" - kata “kota” dan kata “bogor” (tidak memperhatikan urutan)
+# "\"kota bogor\"" - 	frase “kota bogor”
 # "kota OR bogor"	kata “kota” atau kata “bogor” atau keduanya
 # "kota -bogor"	kata “kota” tapi tidak memuat kata “bogor”
 # "#bogor"	hashtag “bogor”
@@ -73,8 +73,10 @@ user <- lookup_users(my_username)
 # filter or select three columns
 user[,c("created_at", "screen_name", "name", "location", "description")]
 
+head(user)
+
 # followers <- get_followers()
 # followings <- get_friends()
 # lookup_users(followings$user_id)
 
-# Documentation: Twitter Dev 
+
