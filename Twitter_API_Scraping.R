@@ -23,10 +23,10 @@ library(rtweet)
 
 # With access token / secret
 token <- create_token(
-  consumer_key = "r8j6JhG8nhoRWW2oib0N5P1sx",
-  consumer_secret = "r8QXIBWIhhz30KpeRBEW9NVKHKBBOvSvZLfS8pk0bKr10fNzxC",
-  access_token = "35094871-j6Tmxt1k1jYSXEMkasJIM7FS0T94K2YWlnxI1wi46",
-  access_secret = "lji11Ep29Z578DG1LPxHGfGMjZicHkpaCpx7q9WaWheQU")
+  consumer_key = "xxxxG8nhoRWW2oib0N5P1sx",
+  consumer_secret = "xxxxxxrWIhhz30KpeRBEW9NVKHKBBOvSvZLfS8pk0bKr10fNzxC",
+  access_token = "xxxxxxx-j6Tmxt1k1jYSXEMkasJIM7FS0T94K2YWlnxI1wi46",
+  access_secret = "xxxxxxxx29Z578DG1LPxHGfGMjZicHkpaCpx7q9WaWheQU")
 
 # Step 3: Crawling Data Twitter 
 
