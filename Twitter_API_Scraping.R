@@ -15,6 +15,7 @@ library(rtweet)
 
 # Find out how to get consumer_key and consumer_secret here: 
 # https://www.nurandi.id/blog/twitter-authentication-dengan-r/
+# https://www.nurandi.id/blog/rtweet-crawling-data-twitter-menggunakan-r/
 
 # Option 1 - not working 
 # token <- create_token(
